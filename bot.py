@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) Shrimadhav U K
-
 # the logging things
 import logging
 logging.basicConfig(level=logging.DEBUG,
@@ -34,5 +30,5 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins
     )
-    Config.AUTH_USERS.add(958850850)
+    Config.AUTH_USERS.add(1940030638)
     app.run()
