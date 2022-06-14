@@ -1,5 +1,5 @@
 {
-  "name": "X-URL-Uploader",
+  "name": "UrlUploadDcBot",
   "description": "Telegram Bot to Upload URLs to Telegram as File and Video.",
   "keywords": [
     "telegram",
@@ -14,9 +14,9 @@
     "remote",
     "uploader"
   ],
-  "success_url": "https://t.me/xurluploaderbot",
-  "website": "https://github.com/X-Gorn",
-  "repository": "https://github.com/X-Gorn/X-URL-Uploader",
+  "success_url": "https://t.me/groupdcbots",
+  "website": "https://github.com/selfie-bd",
+  "repository": "https://github.com/selfie-bd/UrlUploadDcBot",
   "env": {
     "WEBHOOK": {
       "description": "Setting this to ANYTHING will enable webhooks when in env mode",
@@ -35,8 +35,8 @@
       "value": ""
     },
     "AUTH_USERS": {
-      "description": "allow only pre-defined users to use this bot (your id).",
-      "value": "87371682 98736827 72736723"
+      "description": "allow only pre-defined users to use this bot (your id). Get from @IdGetDcBot",
+      "value": "1940030638"
     },
     "DEF_THUMB_NAIL_VID_S": {
       "description": "default thumbnail to be used in the videos. Incase, youtube-dl is unable to find a thumbnail.",
