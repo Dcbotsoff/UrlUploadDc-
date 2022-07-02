@@ -34,9 +34,9 @@ class Config((object)):
     # watermark file
     DEF_WATER_MARK_FILE = ""
     # your telegram id
-    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1940030638"))
     # database session name, example: xurluploader
-    SESSION_NAME = os.environ.get("SESSION_NAME", "")
+    SESSION_NAME = os.environ.get("SESSION_NAME", "UrlUploadDcBot")
     # database uri (mongodb)
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
     PROCESS_TEXT = """
