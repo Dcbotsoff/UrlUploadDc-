@@ -30,5 +30,3 @@ class Config(object):
     DEF_WATER_MARK_FILE = ""
     # see what user do with your bot
     LOG_CHANNEL = ""
-    #IPv6 Connection
-    IPv6 = os.environ.get("IPv6", False)
