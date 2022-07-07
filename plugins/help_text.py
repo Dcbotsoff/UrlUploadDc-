@@ -26,7 +26,6 @@ from pyrogram.types.bots_and_keyboards import InlineKeyboardButton, InlineKeyboa
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["help"]))
 async def help_user(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         # logger.info(update)
         await bot.send_message(
             chat_id=update.chat.id,
@@ -39,7 +38,6 @@ async def help_user(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["start"]))
 async def start(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         await bot.send_message(
             chat_id=update.chat.id,
             text=Translation.START_TEXT.format(update.from_user.first_name),
