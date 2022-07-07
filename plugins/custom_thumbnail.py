@@ -28,7 +28,6 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["genthumbnail"]))
 async def generate_custom_thumbnail(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         if update.reply_to_message is not None:
             reply_message = update.reply_to_message
             if reply_message.media_group_id is not None:
@@ -79,7 +78,6 @@ async def generate_custom_thumbnail(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.photo)
 async def save_photo(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         if update.media_group_id is not None:
             # album is sent
             download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + "/" + str(update.media_group_id) + "/"
@@ -106,7 +104,6 @@ async def save_photo(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["delthumbnail"]))
 async def delthumbnail(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
         try:
             os.remove(download_location + ".jpg")
