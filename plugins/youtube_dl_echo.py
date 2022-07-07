@@ -332,9 +332,9 @@ async def echo(bot, update):
                 str(update.from_user.id) + ".webp",
                 Config.CHUNK_SIZE,
                 None,  # bot,
-                Translation.DOWNLOAD_START,
+                Translation.DOWNLOAD_START
                 
-                update.chat.id
+               
             )
             if os.path.exists(thumb_image_path):
                 im = Image.open(thumb_image_path).convert("RGB")
