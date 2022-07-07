@@ -32,7 +32,7 @@ async def help_user(bot, update, message):
             text=Translation.HELP_USER,
             parse_mode="html",
             disable_web_page_preview=True,
-            reply_to_message_id=update.message_id
+            
         )
 
 
@@ -51,6 +51,6 @@ async def start(bot, update, message):
                     ],
                     [InlineKeyboardButton("🚸 Powered by 🚸", url="https://t.me/selfiebd")],
                 ]
-            ),
-            reply_to_message_id=update.message_id
+            )
+            
         )
