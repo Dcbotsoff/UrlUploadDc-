@@ -38,7 +38,6 @@ from PIL import Image
 
 @pyrogram.Client.on_callback_query()
 async def button(bot, update):
-    if update.from_user.id in Config.AUTH_USERS:
         # logger.info(update)
         cb_data = update.data
         if ":" in cb_data:
